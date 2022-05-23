@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Juego del Ahorcado</title>
+		<link rel="icon" href="ahorcado.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+	
+    <body>
+        <header>
+            <div>
+                <img src="./imagenes/logo.svg" class="logo">
+                <h1 class="titulo">Juego del Ahorcado</h1>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <canvas width="400" height="460" id="pizarra_ahorcado" class="invisible"></canvas>
+                <label for="agregar_palabra"></label>
+				<input type="text" name="palabra_nueva" id="input_agregar_palabra" class="invisible" placeholder="Escriba la palabra para agregar...">
+                <p  id="info">Palabras en MAYÚSCULAS y máximo 8 letras.</p>
+            </section>
+
+            <section class="botones">
+                <button id="iniciar_juego" class="boton_oscuro">Iniciar Juego</button>
+                <button id="agregar_palabra" class="boton_claro">Agregar Palabra</button>
+                <button id="guardar" class="boton_oscuro">Guardar y empezar</button>
+                <button id="salir" class="boton_claro">Salir</button>
+            </section>
+        </main>
+
+    <footer>
+        <p>&copy Copyright Lucas "el Luqui" Bustos - 2022</p> 
+    </footer>
+</body>   
+    
+    <script src="js/ahorcado.js"></script>
+    <script src="js/graficador.js"></script>
+    <script src="js/escoge_palabra.js"></script>
+</html>

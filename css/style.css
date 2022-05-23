@@ -1,0 +1,105 @@
+html{
+    background-color: #D8DFE8;
+    width: 900px;
+    height: 540px;
+}
+
+.logo{
+    display: inline;
+    vertical-align: middle;
+    padding: 24px;
+}
+
+header h1{
+    display: inline;
+    font-family: 'Arial';
+    font-size: 2em;
+    padding: 24px;
+    color: #0A3871;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 110px;
+}
+#pizarra_ahorcado{
+    margin-left: 25%;
+    background: transparent;
+}
+#input_agregar_palabra{
+    width: 300px;
+	height: 35px;
+    background: transparent;
+    font-family: 'Arial';
+    font-size: 1em;
+    text-align: center;
+    border: 1px solid #0A3871;
+	margin-bottom: 10px;
+    margin-left: 33.3%;
+}
+
+p {
+    position: relative;
+    text-align: center;
+    padding: 15px;
+    font-family: "Arial";
+    color: #0A3871;
+    font-size: 0.75em; 
+}
+
+.botones :hover{
+    box-shadow: 0px 15px 15px -5px #343A40;
+}
+
+.boton_oscuro{
+    display: block;
+    background: #0A3871;
+    align-items: flex-start;
+    padding: 24px;
+    position: relative;
+    width: 280px;
+    height: 67px;
+    left: 33.3%;
+    top: 50%;
+    border: 1px solid #000000;
+    border-radius: 18px;
+    margin: 0.5em;
+    font-family: 'Arial';
+    font-style: normal;
+    font-size: 16px;
+    text-align: center;
+    color: #D8DFE8;
+    cursor: pointer;
+}
+
+.boton_claro{
+    background: #D8DFE8;
+    align-items: flex-start;
+    padding: 24px;
+    position: relative;
+    width: 280px;
+    height: 67px;
+    left: 33.3%;
+    top: 50%;
+    border: 1px solid #0A3871;
+    border-radius: 18px;
+    margin: 0.5em;
+    font-family: 'Arial';
+    font-style: normal;
+    font-size: 16px;
+    text-align: center;
+    color: #0A3871;
+    cursor: pointer;
+}
+
+footer p{
+    position: relative;
+    text-align: center;
+    padding: 15px;
+    font-family: "Arial";
+    color: #0A3871;
+    font-size: 1em;
+
+}
+
+.invisible{
+	display: none;
+}
