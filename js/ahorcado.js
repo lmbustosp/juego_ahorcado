@@ -107,7 +107,7 @@ function agregarPalabraSecreta(){ //funcion para agregar palabras para adivinar 
     }else{
         for(posicion = 0; posicion < palabraNueva.length; posicion++){
             if (palabraNueva[posicion].charCodeAt() < 65 || palabraNueva[posicion].charCodeAt() > 90){       
-                alert("La palabra contiene caracteres no válidos. Vuelva a intentar.");
+                alert("La palabra contiene caracteres no válidos. Vuelva a intentar. Recuerda, solo MAYÚSCULAS.");
                 inputAgregarPalabra.value = "";
                 inputAgregarPalabra.focus();
                 juegoHabilitado = false;
@@ -144,7 +144,7 @@ function tecla_pulsada(event){
             return;
         }
         if(tecla.charCodeAt() < 65 || tecla.charCodeAt() > 90){
-            alert("No está permitida tecla presionada. (" + tecla + ")");
+            alert("No está permitida tecla presionada. (" + tecla + "). Recuerda, solo MAYÚSCULAS.");
             return;
         }
         if(expresion.test(palabraSecreta)){ //busca la tecla presionada dentro de la palabra. Y verifica si ya fue presionada anteriormente.
